@@ -1,0 +1,24 @@
+{
+    "name": "adg/importer",
+    "description": "import adgainer data",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ashcslmn",
+            "email": "ashcslmn@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Adg\\Importer\\": "src/"
+        }
+    },
+    "require-dev": {
+        "php": "^7.0"
+    },
+    "require": {},
+    "minimum-stability": "dev"
+}
+
+
