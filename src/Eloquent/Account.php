@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 /**
 * Model of the table tasks.
 */
-class User extends Model
+class Account extends Model
 {
+    protected $connection = "mysql2";
    
 }

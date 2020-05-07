@@ -10,7 +10,7 @@ class Base extends Command
      *
      * @var string
      */
-    protected $signature = 'make:importer {model}';
+    protected $signature = 'adg:importer {model}';
 
     /**
      * The console command description.
