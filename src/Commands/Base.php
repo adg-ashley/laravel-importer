@@ -2,6 +2,8 @@
 namespace Adg\Importer\Commands;
 
 use Illuminate\Console\Command;
+use Adg\Importer\Database\Unload;
+use Illuminate\Support\Str;
 
 class Base extends Command
 {
@@ -36,6 +38,7 @@ class Base extends Command
      */
     public function handle()
     {
-        //
+        $model = "Adg\\Importer\\Eloquent\\".$this->argument('model');
+        (new Unload(new $model))->run();
     }
 }
